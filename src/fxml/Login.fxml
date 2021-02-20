@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="383.0" prefWidth="605.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+   <children>
+      <PasswordField id="password" fx:id="userpass" layoutX="182.0" layoutY="158.0" prefHeight="25.0" prefWidth="250.0" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <TextField id="username" fx:id="username" layoutX="182.0" layoutY="107.0" prefHeight="25.0" prefWidth="250.0" promptText="Username" />
+      <Button fx:id="signUpBtn" layoutX="501.0" layoutY="9.0" mnemonicParsing="false" onAction="#signUpBtnAction" prefHeight="41.0" prefWidth="96.0" style="-fx-background-color: #151920; -fx-border-color: #ffffff;" text="Sign Up" textAlignment="CENTER" />
+      <Button id="signin" fx:id="signInBtn" layoutX="346.0" layoutY="213.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="32.0" prefWidth="78.0" style="-fx-background-color: #2196f3;" text="Sign In" textAlignment="CENTER" />
+      <CheckBox id="rememberme" fx:id="rememberMe" layoutX="182.0" layoutY="213.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="139.0" text="Remember Me" textAlignment="CENTER" textFill="#d0c4c4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Button id="forgotpass" fx:id="forgotPassBtn" layoutX="182.0" layoutY="274.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="242.0" text="Forgot Your Password?" underline="true" />
+      <Text fontSmoothingType="LCD" layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KANYE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.04807692307692308">
+               <stops>
+                  <Stop color="#b5b2b2" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#c9baba" layoutX="182.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Review" wrappingWidth="208.9830722808838">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <ProgressBar id="progress" fx:id="progressBar" layoutX="182.0" layoutY="328.0" opacity="0.9" prefHeight="20.0" prefWidth="242.0">
+         <effect>
+            <Bloom />
+         </effect>
+      </ProgressBar>
+   </children>
+</AnchorPane>
